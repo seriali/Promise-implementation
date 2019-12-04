@@ -117,7 +117,7 @@ MyPromise.resolve = function (value){
 ```
 > **Promise.reject**
 >
-Promise.reject() 方法的参数，会原封不动地作为 reject 的理由，编程后续方法的参数
+Promise.reject() 方法的参数，会原封不动地作为 reject 的理由，变成后续方法的参数
 
 ```
 Promise.reject = function(reason){
