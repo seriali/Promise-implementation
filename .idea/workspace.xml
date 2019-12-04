@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="801833be-0cfa-4d76-96f1-5e397add8d85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Promise 常见的API实现.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -38,7 +38,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -92,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575434377373</updated>
-      <workItem from="1575434380420" duration="8439000" />
+      <workItem from="1575434380420" duration="8696000" />
     </task>
     <task id="LOCAL-00001" summary="实现了简单版的原生Promise和Promise的API中then的方法">
       <created>1575437316055</created>
@@ -108,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575440968656</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Promise 常见的API实现">
+      <created>1575443600293</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575443600293</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,17 +127,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="实现了简单版的原生Promise和Promise的API中then的方法" />
     <MESSAGE value="符合Promise A+ 规范的Promise" />
-    <option name="LAST_COMMIT_MESSAGE" value="符合Promise A+ 规范的Promise" />
+    <MESSAGE value="Promise 常见的API实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="Promise 常见的API实现" />
   </component>
   <component name="WindowStateProjectService">
     <state x="325" y="109" key="#Notifications" timestamp="1575436012064">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="325" y="109" key="#Notifications/0.40.1536.824@0.40.1536.824" timestamp="1575436012064" />
-    <state x="70" y="40" key="CommitChangelistDialog2" timestamp="1575440967769">
+    <state x="70" y="40" key="CommitChangelistDialog2" timestamp="1575443599542">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="70" y="40" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1575440967769" />
+    <state x="70" y="40" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1575443599542" />
     <state width="1364" height="149" key="GridCell.Tab.0.bottom" timestamp="1575437229629">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -149,10 +159,10 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="268" y="107" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1575441051329" />
-    <state x="325" y="180" key="Vcs.Push.Dialog.v2" timestamp="1575440980809">
+    <state x="325" y="180" key="Vcs.Push.Dialog.v2" timestamp="1575443612641">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="325" y="180" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1575440980809" />
+    <state x="325" y="180" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1575443612641" />
     <state x="410" y="224" key="git4idea.merge.GitPullDialog" timestamp="1575436525728">
       <screen x="0" y="40" width="1536" height="824" />
     </state>

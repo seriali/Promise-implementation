@@ -2,9 +2,13 @@
 > **1.术语**
 >
 &emsp;&emsp;1.1. promise是一个有then 方法的对象或者函数，行为遵循这个规范
+
 &emsp;&emsp;1.2. thenable 是一个有then 方法的对象或者函数
+
 &emsp;&emsp;1.3. value是promise状态成功的值（包括undefined/thenable或者promise）
+
 &emsp;&emsp;1.4. exception是一个使用throw抛出的异常值
+
 &emsp;&emsp;1.5. reason是promise 状态失败时的值
 > 要求
 ##### 2.1 Promise States
