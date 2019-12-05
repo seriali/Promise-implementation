@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="801833be-0cfa-4d76-96f1-5e397add8d85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/符合Promise A+ 规范的Promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/符合Promise A+ 规范的Promise.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,7 @@
       <recent name="F:\WebstormProjects\Promise源码及其实现" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.简单版Promise.js">
+  <component name="RunManager">
     <configuration name="简单Promise源码实现.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/简单Promise源码实现.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -67,7 +66,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.简单版Promise.js" />
         <item itemvalue="Node.js.简单Promise源码实现.js" />
       </list>
     </recent_temporary>
@@ -94,7 +92,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575434377373</updated>
-      <workItem from="1575434380420" duration="8696000" />
+      <workItem from="1575434380420" duration="9317000" />
+      <workItem from="1575507391640" duration="1222000" />
     </task>
     <task id="LOCAL-00001" summary="实现了简单版的原生Promise和Promise的API中then的方法">
       <created>1575437316055</created>
@@ -117,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575443600293</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Promise 常见的API实现">
+      <created>1575443857944</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575443857944</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,10 +141,10 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="325" y="109" key="#Notifications/0.40.1536.824@0.40.1536.824" timestamp="1575436012064" />
-    <state x="70" y="40" key="CommitChangelistDialog2" timestamp="1575443599542">
+    <state x="70" y="40" key="CommitChangelistDialog2" timestamp="1575443857212">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="70" y="40" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1575443599542" />
+    <state x="70" y="40" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1575443857212" />
     <state width="1364" height="149" key="GridCell.Tab.0.bottom" timestamp="1575437229629">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -155,14 +161,18 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1364" height="149" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1575437229628" />
-    <state x="268" y="107" key="SettingsEditor" timestamp="1575441051329">
+    <state x="268" y="107" key="SettingsEditor" timestamp="1575508601207">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="268" y="107" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1575441051329" />
-    <state x="325" y="180" key="Vcs.Push.Dialog.v2" timestamp="1575443612641">
+    <state x="268" y="107" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1575508601207" />
+    <state x="325" y="180" key="Vcs.Push.Dialog.v2" timestamp="1575443868804">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="325" y="180" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1575443612641" />
+    <state x="325" y="180" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1575443868804" />
+    <state x="733" y="40" width="803" height="824" key="find.popup" timestamp="1575507799636">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="733" y="40" width="803" height="824" key="find.popup/0.40.1536.824@0.40.1536.824" timestamp="1575507799636" />
     <state x="410" y="224" key="git4idea.merge.GitPullDialog" timestamp="1575436525728">
       <screen x="0" y="40" width="1536" height="824" />
     </state>

@@ -51,7 +51,7 @@ MyPromise.prototype.then = function (onFulfilled, onRejected) {
             that.onFulfilled.push(() => {
                 try {
                     const x = onFulfilled(that.value);
-                    resolvePromise(promise2, x, resolve, reject);
+                    resolutionPromise(promise2, x, resolve, reject);
                 }catch (e) {
                     reject(e)
                 }
@@ -59,7 +59,7 @@ MyPromise.prototype.then = function (onFulfilled, onRejected) {
             that.onRejected.push(() => {
                 try {
                     const x = onRejected(that.value);
-                    resolvePromise(promise2, x, resolve, reject);
+                    resolutionPromise(promise2, x, resolve, reject);
                 }catch (e) {
                     reject(e)
                 }
@@ -74,7 +74,7 @@ MyPromise.prototype.then = function (onFulfilled, onRejected) {
                 try {
                     // Promise / A+ 2.2.7.1
                     const x = onFulfilled(that.value);
-                    resolvePromise(promise2, x, resolve, reject);
+                    resolutionPromise(promise2, x, resolve, reject);
                 }catch (e) {
                     reject(e);
                 }
@@ -87,7 +87,7 @@ MyPromise.prototype.then = function (onFulfilled, onRejected) {
             setTimeout(() =>{
                 try {
                     const x = onRejected(that.value);
-                    resolvePromise(promise2, x, resolve, reject);
+                    resolutionPromise(promise2, x, resolve, reject);
                 }catch (e) {
                     reject(e);
                 }
@@ -95,13 +95,25 @@ MyPromise.prototype.then = function (onFulfilled, onRejected) {
         }))
     }
 };
-// 能兼容多种 Promise 的 resolvePromise函数
-function resolvePromise(promise2, x, resolve, reject) {
+// 能兼容多种 Promise 的 resolutionPromise函数
+function resolutionPromise(promise2, x, resolve, reject) {
     const that = this;
     // Promise / A+ 2.3.1
     // 如果x与promise指向同一对象，报TypeError错误，因为会发生循环引用的问题
     if (x === promise2){
         reject(new TypeError("Error"));
+    }
+    // Promise / A+ 2.3.2
+    if (x instanceof MyPromise){
+        if (x.state === PENDING){
+            x.then(value => {
+                resolutionPromise(promise2, value, resolve, reject);
+            }, reject)
+        }else {
+            // Promise / A+ 2.3.2.2 / Promise / A+ 2.3.2.3
+            x.then(resolve, reject);
+        }
+        return;
     }
     // 创建变量判断是否已经调用过函数,默认为false
     // Promise / A+ 2.3.3.3.3 只能调用一次
@@ -119,7 +131,7 @@ function resolvePromise(promise2, x, resolve, reject) {
                 then.call(x, y => {
                     if(called) return;
                     called = true;
-                    resolvePromise(promise2, y, resolve, reject);
+                    resolutionPromise(promise2, y, resolve, reject);
                 }, r => {
                     // Promise / A+ 2.3.3.2
                     if (called) return;
